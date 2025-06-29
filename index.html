@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>¡Feliz Cumple Papá!</title>
+  <!-- Google Font: Playfair Display -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+  rel="stylesheet"
+/>
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <div id="balloons-container"></div>
+  <header class="text-center py-4 bg-primary text-white">
+    <h1>¡Feliz Cumpleaños, Papá!</h1>
+  </header>
+
+  <main class="container flex-fill text-center my-5">
+    <!-- Mensaje adicional o carrusel de fotos -->
+    <p class="lead">Gracias por todo tu amor y apoyo.</p><br>
+    <p class="lead">Y que cumplas muchos maaaaas!!</p>
+
+    <div id="fotosCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <!-- Indicadores (opcional) -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#fotosCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#fotosCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#fotosCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#fotosCarousel" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#fotosCarousel" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#fotosCarousel" data-bs-slide-to="5"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./assets/img/imagen1.jpg" class="d-block w-100" alt="Foto 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/img/imagen2.jpg" class="d-block w-100" alt="Momento feliz 4"
+              style=" width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* sube un poco la zona visible: */
+                object-position: 50% 30%;
+              "
+            >
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/img/imagen3.jpg" class="d-block w-100" alt="Momento feliz 4"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* sube un poco la zona visible: */
+                object-position: 50% 30%;
+              "
+            >
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/img/imagen4.jpg" class="d-block w-100" alt="Foto 4">
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/img/imagen5.jpg" class="d-block w-100" alt="Foto 5">
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/img/imagen6.jpg" class="d-block w-100" alt="Foto 6">
+        </div>
+    </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#fotosCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#fotosCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+  </div>
+
+    <button id="btnConfetti" class="btn btn-success btn-lg m-2">
+      ¡Lanzar Confeti!
+    </button>
+    <button id="btnAudio" class="btn btn-warning btn-lg m-2">
+      Reproducir Audio 🎵
+    </button>
+  </main>
+
+  <footer class="text-center py-3 bg-light">
+    <small>Con cariño de tus hijos Aaron y Emmanuel.</small>
+  </footer>
+
+  <!-- canvas-confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <!-- Bootstrap 5 JS Bundle (Popper + JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
